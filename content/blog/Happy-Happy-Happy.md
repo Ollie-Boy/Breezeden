@@ -8,7 +8,7 @@ tags = ["life",]
 
 Finally, bought Nintendo Switch 2 and played BOTW again after about one and half year, it is truly a good game even this is my third play lol.
 
-What about TOTK? Last-play is maybe 1 year, I forgot it but will also play later since it has an enhanced version on NS2 like BOTW. (Tho they so so much expensive...)
+What about TOTK? Last-play is maybe 1 year, I forgot it but will also play later since it has an enhanced version on NS2 like BOTW. (Tho they are so much expensive...)
 
 The new Mario Cart is also funny btw, I will give it 8.5/10.
 
