@@ -10,7 +10,7 @@ tags = ["life"]
 
 NGL, I LIKE THIS FURRY GOD SO MUCH!!!!
 
-{{< image-gallery gallery_dir="/images/Furry God" >}}
+{{< image-gallery gallery_dir="/images/The Furry God" >}}
 
 Also da lil bird :3
 
