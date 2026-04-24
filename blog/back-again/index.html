@@ -84,12 +84,16 @@ Ah, and switch 2, I really wanna buy one, but…. IT IS TOO EXPENSIVE!! Why, Nin
     overflow-wrap: break-word;
     line-height: 1.5;
     color: #333;
-    height: 94vh;
-    display: flex;
-    flex-direction: column;
     position: relative;
   }
 
+  #homepage-wrapper {
+      min-height: calc(100vh - 40px);
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+  }
+    
   a {
     color: #3273dc;
     text-decoration: none;

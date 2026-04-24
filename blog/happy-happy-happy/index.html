@@ -81,12 +81,16 @@ The new Mario Cart is also funny btw, I will give it 8.5/10.">
     overflow-wrap: break-word;
     line-height: 1.5;
     color: #333;
-    height: 94vh;
-    display: flex;
-    flex-direction: column;
     position: relative;
   }
 
+  #homepage-wrapper {
+      min-height: calc(100vh - 40px);
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+  }
+    
   a {
     color: #3273dc;
     text-decoration: none;
