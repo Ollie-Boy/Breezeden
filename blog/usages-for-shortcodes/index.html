@@ -384,7 +384,8 @@
     margin-bottom: 1rem;
   }
 
-  .toc ul {
+  .toc ul,
+  .toc ol {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
@@ -431,7 +432,7 @@
 <script type='text/javascript' src='/js/lightbox.js'></script>
 
 
-<script src='https://lixiang.dev/js/vanilla-back-to-top.min.js'></script>
+<script src='/js/vanilla-back-to-top.min.js'></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     addBackToTop({
@@ -690,7 +691,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <ol>
 <li><strong>Normal quote:</strong></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">blockquote</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">blockquote</span> &gt;}}
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">This</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">simple</span> <span style="color:#a6e22e">quote</span>.
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">blockquote</span> &gt;}}
 </span></span></code></pre></div>
@@ -723,7 +724,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <ol start="2">
 <li><strong>Quote with author:</strong></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">blockquote</span> <span style="color:#a6e22e">author</span>=<span style="color:#e6db74">&#34;Li Xiang&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">blockquote</span> <span style="color:#a6e22e">author</span>=<span style="color:#e6db74">&#34;Li Xiang&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">This</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">quote</span> <span style="color:#a6e22e">with</span> <span style="color:#a6e22e">only</span> <span style="color:#a6e22e">an</span> <span style="color:#a6e22e">author</span> <span style="color:#a6e22e">named</span> <span style="color:#a6e22e">Li</span> <span style="color:#a6e22e">Xiang</span>.
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">blockquote</span> &gt;}}
 </span></span></code></pre></div>
@@ -761,7 +762,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <ol start="3">
 <li><strong>Quote with author and source:</strong></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">blockquote</span> <span style="color:#a6e22e">author</span>=<span style="color:#e6db74">&#34;Li Xiang&#34;</span> <span style="color:#a6e22e">source</span>=<span style="color:#e6db74">&#34;Source&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">blockquote</span> <span style="color:#a6e22e">author</span>=<span style="color:#e6db74">&#34;Li Xiang&#34;</span> <span style="color:#a6e22e">source</span>=<span style="color:#e6db74">&#34;Source&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">This</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">quote</span> <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">Li</span> <span style="color:#a6e22e">Xiang</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">source</span> <span style="color:#e6db74">&#34;source.&#34;</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">blockquote</span> &gt;}}
 </span></span></code></pre></div>
@@ -797,7 +798,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <ol start="4">
 <li><strong>Quote with author and link:</strong></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">blockquote</span> <span style="color:#a6e22e">author</span>=<span style="color:#e6db74">&#34;Li Xiang&#34;</span> <span style="color:#a6e22e">link</span>=<span style="color:#e6db74">&#34;https://lixiang.dev/usages-for-shortcodes/#blockquote&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">blockquote</span> <span style="color:#a6e22e">author</span>=<span style="color:#e6db74">&#34;Li Xiang&#34;</span> <span style="color:#a6e22e">link</span>=<span style="color:#e6db74">&#34;https://lixiang.dev/usages-for-shortcodes/#blockquote&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">This</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">quote</span> <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">Li</span> <span style="color:#a6e22e">Xiang</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">links</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">https</span>:<span style="color:#75715e">//lixiang.dev/usages-for-shortcodes/#blockquote.</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">blockquote</span> &gt;}}
 </span></span></code></pre></div>
@@ -861,7 +862,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <ol start="5">
 <li><strong>Quote with author, link and title:</strong></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">blockquote</span> <span style="color:#a6e22e">author</span>=<span style="color:#e6db74">&#34;Li Xiang&#34;</span> <span style="color:#a6e22e">link</span>=<span style="color:#e6db74">&#34;https://lixiang.dev/usages-for-shortcodes/#blockquote&#34;</span> <span style="color:#a6e22e">title</span>=<span style="color:#e6db74">&#34;Usages for Shortcodes&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">blockquote</span> <span style="color:#a6e22e">author</span>=<span style="color:#e6db74">&#34;Li Xiang&#34;</span> <span style="color:#a6e22e">link</span>=<span style="color:#e6db74">&#34;https://lixiang.dev/usages-for-shortcodes/#blockquote&#34;</span> <span style="color:#a6e22e">title</span>=<span style="color:#e6db74">&#34;Usages for Shortcodes&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">This</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">quote</span> <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">Li</span> <span style="color:#a6e22e">Xiang</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">links</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">https</span>:<span style="color:#75715e">//lixiang.dev/usages-for-shortcodes/#blockquote with title &#34;Usages for Shortcodes&#34;.</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">blockquote</span> &gt;}}
 </span></span></code></pre></div>
@@ -902,55 +903,55 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
 </blockquote>
 <h1 id="image-gallery">image gallery</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">image</span><span style="color:#f92672">-</span><span style="color:#a6e22e">gallery</span> <span style="color:#a6e22e">gallery_dir</span>=<span style="color:#e6db74">&#34;/images/Usage For Shortcodes&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">image</span><span style="color:#f92672">-</span><span style="color:#a6e22e">gallery</span> <span style="color:#a6e22e">gallery_dir</span>=<span style="color:#e6db74">&#34;/images/Usage For Shortcodes&#34;</span> &gt;}}
 </span></span></code></pre></div>
 <ul class="image-gallery">
 <li>
-      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/Museum%20of%20Pop%20Culture_hu_adbf3ee91d940978.jpg" title="Museum of Pop Culture" class="lightbox-image">
-        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/Museum%20of%20Pop%20Culture_hu_3b9496f5c8554827.jpg" alt="Museum of Pop Culture" title="Museum of Pop Culture">
+      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/Museum%20of%20Pop%20Culture_hu_66b09e35fa2cb96d.jpg" title="Museum of Pop Culture" class="lightbox-image">
+        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/Museum%20of%20Pop%20Culture_hu_4ad4cc13378b6cba.jpg" alt="Museum of Pop Culture" title="Museum of Pop Culture">
         <span>Museum of Pop Culture</span>
       </a>
     </li>
 <li>
-      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/Nopopo_hu_4432820bdd7fc7e3.jpg" title="Nopopo" class="lightbox-image">
-        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/Nopopo_hu_2c0374d57355b3dc.jpg" alt="Nopopo" title="Nopopo">
+      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/Nopopo_hu_25914959cf0d38f7.jpg" title="Nopopo" class="lightbox-image">
+        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/Nopopo_hu_aeef31a3e16ae205.jpg" alt="Nopopo" title="Nopopo">
         <span>Nopopo</span>
       </a>
     </li>
 <li>
-      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/bird_hu_729a4c0b51bf81b7.png" title="bird" class="lightbox-image">
-        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/bird_hu_565b2428f7ec6ab4.png" alt="bird" title="bird">
+      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/bird_hu_695103c3caf94c47.png" title="bird" class="lightbox-image">
+        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/bird_hu_dfb2700593970992.png" alt="bird" title="bird">
         <span>bird</span>
       </a>
     </li>
 <li>
-      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/blue_bird_hu_662792ffba01cc63.png" title="blue_bird" class="lightbox-image">
-        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/blue_bird_hu_40cd88ecdb2299a8.png" alt="blue_bird" title="blue_bird">
+      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/blue_bird_hu_67382e9aa127153c.png" title="blue_bird" class="lightbox-image">
+        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/blue_bird_hu_40ef19348e012c55.png" alt="blue_bird" title="blue_bird">
         <span>blue_bird</span>
       </a>
     </li>
 <li>
-      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/chick_hu_25f6b6bc2f1ebeb9.png" title="chick" class="lightbox-image">
-        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/chick_hu_1915c93805bd0bd1.png" alt="chick" title="chick">
+      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/chick_hu_3a74f51d5255e4c9.png" title="chick" class="lightbox-image">
+        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/chick_hu_1d59176e3cb08d8.png" alt="chick" title="chick">
         <span>chick</span>
       </a>
     </li>
 <li>
-      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/look-at-dis-dude-yao-ming_hu_53a1902f25f6d5aa.gif" title="look-at-dis-dude-yao-ming" class="lightbox-image">
-        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/look-at-dis-dude-yao-ming_hu_1928638b9ff8c269.gif" alt="look-at-dis-dude-yao-ming" title="look-at-dis-dude-yao-ming">
+      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/look-at-dis-dude-yao-ming_hu_d4e21180121ffaef.gif" title="look-at-dis-dude-yao-ming" class="lightbox-image">
+        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/look-at-dis-dude-yao-ming_hu_8b4ebc42804e88ff.gif" alt="look-at-dis-dude-yao-ming" title="look-at-dis-dude-yao-ming">
         <span>look-at-dis-dude-yao-ming</span>
       </a>
     </li>
 <li>
-      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/what_hu_72d9bcf92a2f021d.gif" title="what" class="lightbox-image">
-        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/what_hu_1e927dd6cbf90fee.gif" alt="what" title="what">
+      <a href="https://lixiang.dev/images/Usage%20For%20Shortcodes/what_hu_31b45653f30e52da.gif" title="what" class="lightbox-image">
+        <img src="https://lixiang.dev/images/Usage%20For%20Shortcodes/what_hu_202488d713165fb0.gif" alt="what" title="what">
         <span>what</span>
       </a>
     </li>
 
 </ul>
 <h1 id="sidenote">sidenote</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">sidenote</span> <span style="color:#e6db74">`
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">sidenote</span> <span style="color:#e6db74">`
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Some content.
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">`</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">This</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">sidenote</span>. :<span style="color:#a6e22e">smile</span>:
@@ -965,7 +966,7 @@ document.addEventListener('DOMContentLoaded', function () {
   </div>
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">sidenote</span> <span style="color:#e6db74">`
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">sidenote</span> <span style="color:#e6db74">`
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Another content.
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">`</span> <span style="color:#a6e22e">left</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">And</span> <span style="color:#a6e22e">sidenote</span> <span style="color:#a6e22e">on</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">left</span> <span style="color:#a6e22e">side</span>. :<span style="color:#a6e22e">sunglasses</span>:
@@ -981,7 +982,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 
 <h1 id="audio">audio</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">audio</span> <span style="color:#a6e22e">mp3</span>=<span style="color:#e6db74">&#34;/audio/bird-sing.mp3&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">audio</span> <span style="color:#a6e22e">mp3</span>=<span style="color:#e6db74">&#34;/audio/bird-sing.mp3&#34;</span> &gt;}}
 </span></span></code></pre></div><div class="container">
 <audio controls style="width: 100%; margin-bottom: 20px">
     
@@ -1007,7 +1008,7 @@ document.addEventListener('DOMContentLoaded', function () {
   </div>
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">collapsible</span> <span style="color:#e6db74">&#34;One Layer Collapsible&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">collapsible</span> <span style="color:#e6db74">&#34;One Layer Collapsible&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Content</span> <span style="color:#a6e22e">here</span>.
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">collapsible</span> &gt;}}
 </span></span></code></pre></div>
@@ -1018,8 +1019,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 <div class="collapsible">
-  <input id="collapsible_bcde484d9ec3677642734c62d1ffd51b" type="checkbox" name="collapsible">
-  <label for="collapsible_bcde484d9ec3677642734c62d1ffd51b">
+  <input id="collapsible_dde8cd749521fcc3e167b4d6f72364b4" type="checkbox" name="collapsible">
+  <label for="collapsible_dde8cd749521fcc3e167b4d6f72364b4">
     One Layer Collapsible
   </label>
   <div class="collapsible-body">
@@ -1027,7 +1028,7 @@ document.addEventListener('DOMContentLoaded', function () {
   </div>
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">collapsible</span> <span style="color:#e6db74">&#34;A&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">collapsible</span> <span style="color:#e6db74">&#34;A&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Some</span> <span style="color:#a6e22e">content</span> <span style="color:#a6e22e">here</span>.
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">collapsible</span> &gt;}}
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">collapsible</span> <span style="color:#e6db74">&#34;B&#34;</span> &gt;}}
@@ -1041,8 +1042,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 <div class="collapsible">
-  <input id="collapsible_4f41dc95cc4d663ded262b13f7be8774" type="checkbox" name="collapsible">
-  <label for="collapsible_4f41dc95cc4d663ded262b13f7be8774">
+  <input id="collapsible_8d51f976327cd1c4eb476dc246e3bd4f" type="checkbox" name="collapsible">
+  <label for="collapsible_8d51f976327cd1c4eb476dc246e3bd4f">
     A
   </label>
   <div class="collapsible-body">
@@ -1058,8 +1059,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 <div class="collapsible">
-  <input id="collapsible_edb5c921d73f464d6b32c474c678f1de" type="checkbox" name="collapsible">
-  <label for="collapsible_edb5c921d73f464d6b32c474c678f1de">
+  <input id="collapsible_fc867e2d4edc3492d7b3464c5167dfb1" type="checkbox" name="collapsible">
+  <label for="collapsible_fc867e2d4edc3492d7b3464c5167dfb1">
     B
   </label>
   <div class="collapsible-body">
@@ -1068,42 +1069,42 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 </p>
 <h1 id="color">color</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">color</span> <span style="color:#e6db74">&#34;primary&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">color</span> <span style="color:#e6db74">&#34;primary&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Primary</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">color</span> &gt;}}
 </span></span></code></pre></div><div class="text-primary">
   Primary
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">color</span> <span style="color:#e6db74">&#34;secondary&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">color</span> <span style="color:#e6db74">&#34;secondary&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Secondary</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">color</span> &gt;}}
 </span></span></code></pre></div><div class="text-secondary">
   Secondary
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">color</span> <span style="color:#e6db74">&#34;success&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">color</span> <span style="color:#e6db74">&#34;success&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Success</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">color</span> &gt;}}
 </span></span></code></pre></div><div class="text-success">
   Success
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">color</span> <span style="color:#e6db74">&#34;warning&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">color</span> <span style="color:#e6db74">&#34;warning&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Warning</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">color</span> &gt;}}
 </span></span></code></pre></div><div class="text-warning">
   Warning
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">color</span> <span style="color:#e6db74">&#34;danger&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">color</span> <span style="color:#e6db74">&#34;danger&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Danger</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">color</span> &gt;}}
 </span></span></code></pre></div><div class="text-danger">
   Danger
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">color</span> <span style="color:#e6db74">&#34;muted&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">color</span> <span style="color:#e6db74">&#34;muted&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Muted</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">color</span> &gt;}}
 </span></span></code></pre></div><div class="text-muted">
@@ -1111,49 +1112,49 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 
 <h1 id="alert">alert</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Normal</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">alert</span> &gt;}}
 </span></span></code></pre></div><div class="alert alert-">
   Normal
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> <span style="color:#e6db74">&#34;primary&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> <span style="color:#e6db74">&#34;primary&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Primary</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">alert</span> &gt;}}
 </span></span></code></pre></div><div class="alert alert-primary">
   Primary
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> <span style="color:#e6db74">&#34;secondary&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> <span style="color:#e6db74">&#34;secondary&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Secondary</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">alert</span> &gt;}}
 </span></span></code></pre></div><div class="alert alert-secondary">
   Secondary
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> <span style="color:#e6db74">&#34;success&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> <span style="color:#e6db74">&#34;success&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Success</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">alert</span> &gt;}}
 </span></span></code></pre></div><div class="alert alert-success">
   Success
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> <span style="color:#e6db74">&#34;warning&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> <span style="color:#e6db74">&#34;warning&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Warning</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">alert</span> &gt;}}
 </span></span></code></pre></div><div class="alert alert-warning">
   Warning
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> <span style="color:#e6db74">&#34;danger&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> <span style="color:#e6db74">&#34;danger&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Danger</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">alert</span> &gt;}}
 </span></span></code></pre></div><div class="alert alert-danger">
   Danger
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> <span style="color:#e6db74">&#34;muted&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">alert</span> <span style="color:#e6db74">&#34;muted&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Muted</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">alert</span> &gt;}}
 </span></span></code></pre></div><div class="alert alert-muted">
@@ -1161,42 +1162,42 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 
 <h1 id="background">background</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">background</span> <span style="color:#e6db74">&#34;primary&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">background</span> <span style="color:#e6db74">&#34;primary&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Primary</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">background</span> &gt;}}
 </span></span></code></pre></div><div class="background background-primary">
   Primary
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">background</span> <span style="color:#e6db74">&#34;secondary&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">background</span> <span style="color:#e6db74">&#34;secondary&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Secondary</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">background</span> &gt;}}
 </span></span></code></pre></div><div class="background background-secondary">
   Secondary
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">background</span> <span style="color:#e6db74">&#34;success&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">background</span> <span style="color:#e6db74">&#34;success&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Success</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">background</span> &gt;}}
 </span></span></code></pre></div><div class="background background-success">
   Success
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">background</span> <span style="color:#e6db74">&#34;warning&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">background</span> <span style="color:#e6db74">&#34;warning&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Warning</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">background</span> &gt;}}
 </span></span></code></pre></div><div class="background background-warning">
   Warning
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">background</span> <span style="color:#e6db74">&#34;danger&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">background</span> <span style="color:#e6db74">&#34;danger&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Danger</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">background</span> &gt;}}
 </span></span></code></pre></div><div class="background background-danger">
   Danger
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">background</span> <span style="color:#e6db74">&#34;muted&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">background</span> <span style="color:#e6db74">&#34;muted&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Muted</span>
 </span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">background</span> &gt;}}
 </span></span></code></pre></div><div class="background background-muted">
@@ -1204,31 +1205,31 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 
 <h1 id="badge">badge</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> &gt;}}<span style="color:#a6e22e">normal</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> &gt;}}<span style="color:#a6e22e">normal</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
 </span></span></code></pre></div><span class="badge ">
   normal
 </span>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> <span style="color:#e6db74">&#34;primary&#34;</span> &gt;}}<span style="color:#a6e22e">primary</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> <span style="color:#e6db74">&#34;primary&#34;</span> &gt;}}<span style="color:#a6e22e">primary</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
 </span></span></code></pre></div><span class="badge primary">
   primary
 </span>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> <span style="color:#e6db74">&#34;secondary&#34;</span> &gt;}}<span style="color:#a6e22e">secondary</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> <span style="color:#e6db74">&#34;secondary&#34;</span> &gt;}}<span style="color:#a6e22e">secondary</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
 </span></span></code></pre></div><span class="badge secondary">
   secondary
 </span>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> <span style="color:#e6db74">&#34;success&#34;</span> &gt;}}<span style="color:#a6e22e">success</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> <span style="color:#e6db74">&#34;success&#34;</span> &gt;}}<span style="color:#a6e22e">success</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
 </span></span></code></pre></div><span class="badge success">
   success
 </span>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> <span style="color:#e6db74">&#34;warning&#34;</span> &gt;}}<span style="color:#a6e22e">warning</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> <span style="color:#e6db74">&#34;warning&#34;</span> &gt;}}<span style="color:#a6e22e">warning</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
 </span></span></code></pre></div><span class="badge warning">
   warning
 </span>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> <span style="color:#e6db74">&#34;danger&#34;</span> &gt;}}<span style="color:#a6e22e">danger</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> <span style="color:#e6db74">&#34;danger&#34;</span> &gt;}}<span style="color:#a6e22e">danger</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
 </span></span></code></pre></div><span class="badge danger">
   danger
 </span>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> <span style="color:#e6db74">&#34;muted&#34;</span> &gt;}}<span style="color:#a6e22e">muted</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">badge</span> <span style="color:#e6db74">&#34;muted&#34;</span> &gt;}}<span style="color:#a6e22e">muted</span>{{&lt; <span style="color:#f92672">/</span><span style="color:#a6e22e">badge</span> &gt;}}
 </span></span></code></pre></div><span class="badge muted">
   muted
 </span>
@@ -1248,15 +1249,14 @@ document.addEventListener('DOMContentLoaded', function () {
       </main>  
     <script src="/js/clipboard.js"></script>
     <link rel="stylesheet" href="/css/clipboard.css">
-</div>
-  </body>
-
-  <footer><i>Dear wind, please take me fly</i>
+<footer><i>Dear wind, please take me fly</i>
 <br />
-Copyright &copy; 2025 Li Xiang 
+Copyright &copy; 2026 Li Xiang 
  · 
 Based on <a href="https://bearblog.dev/" target="_blank">Bear ʕ•ᴥ•ʔ Blog</a>
 
 
 </footer>
+    </div>
+  </body>
 </html>

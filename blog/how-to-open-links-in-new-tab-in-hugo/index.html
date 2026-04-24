@@ -384,7 +384,8 @@
     margin-bottom: 1rem;
   }
 
-  .toc ul {
+  .toc ul,
+  .toc ol {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
@@ -431,7 +432,7 @@
 <script type='text/javascript' src='/js/lightbox.js'></script>
 
 
-<script src='https://lixiang.dev/js/vanilla-back-to-top.min.js'></script>
+<script src='/js/vanilla-back-to-top.min.js'></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     addBackToTop({
@@ -592,17 +593,17 @@ document.addEventListener('DOMContentLoaded', function () {
 <ol>
 <li>HTML</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://example.com/&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;This is an example!&lt;/<span style="color:#f92672">a</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://example.com/&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;This is an example!&lt;/<span style="color:#f92672">a</span>&gt;
 </span></span></code></pre></div><ol start="2">
 <li>kramdown syntax</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>[<span style="color:#f92672">Example</span>](<span style="color:#a6e22e">https://www.example.com</span>){:target=&#34;_blank&#34;}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>[<span style="color:#f92672">Example</span>](<span style="color:#a6e22e">https://www.example.com</span>){:target=&#34;_blank&#34;}
 </span></span></code></pre></div><p>After that I was like:</p>
 <blockquote>
 <p>Bruh, what happened?!!</p>
 </blockquote>
 <p><strong>Update:</strong> You can simply set <code>[markup.goldmark.renderer.unsafe] = true</code> in your <code>config.toml</code>, then go to 1.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># This is the default configuration for the Goldmark Markdown renderer:</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># This is the default configuration for the Goldmark Markdown renderer:</span>
 </span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>]
 </span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>]
 </span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>.<span style="color:#a6e22e">renderer</span>]
@@ -620,7 +621,7 @@ I&rsquo;ll just show how to do it directly, you can go to learn more if you have
 <p>Copy and paste.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{<span style="color:#75715e">/*  To tell hugo to open links in a new tab and do not let the site you are linking to to know the traffic came from your site  */</span>}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{<span style="color:#75715e">/*  To tell hugo to open links in a new tab and do not let the site you are linking to to know the traffic came from your site  */</span>}}
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span>=<span style="color:#e6db74">&#34;{{ .Destination | safeURL }}&#34;</span>{{ <span style="color:#a6e22e">with</span> .<span style="color:#a6e22e">Title</span>}} <span style="color:#a6e22e">title</span>=<span style="color:#e6db74">&#34;{{ . }}&#34;</span>{{ <span style="color:#a6e22e">end</span> }}{{ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">HasPrefix</span> .<span style="color:#a6e22e">Destination</span> <span style="color:#e6db74">&#34;http&#34;</span> }} <span style="color:#a6e22e">target</span>=<span style="color:#e6db74">&#34;_blank&#34;</span> <span style="color:#a6e22e">rel</span>=<span style="color:#e6db74">&#34;noreferrer noopener&#34;</span>{{ <span style="color:#a6e22e">end</span> }}&gt;
 </span></span><span style="display:flex;"><span>    {{ .<span style="color:#a6e22e">Text</span> }}
 </span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">a</span>&gt;
@@ -641,15 +642,14 @@ I&rsquo;ll just show how to do it directly, you can go to learn more if you have
       </main>  
     <script src="/js/clipboard.js"></script>
     <link rel="stylesheet" href="/css/clipboard.css">
-</div>
-  </body>
-
-  <footer><i>Dear wind, please take me fly</i>
+<footer><i>Dear wind, please take me fly</i>
 <br />
-Copyright &copy; 2025 Li Xiang 
+Copyright &copy; 2026 Li Xiang 
  · 
 Based on <a href="https://bearblog.dev/" target="_blank">Bear ʕ•ᴥ•ʔ Blog</a>
 
 
 </footer>
+    </div>
+  </body>
 </html>

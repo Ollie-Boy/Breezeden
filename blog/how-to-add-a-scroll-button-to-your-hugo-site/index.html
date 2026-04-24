@@ -384,7 +384,8 @@
     margin-bottom: 1rem;
   }
 
-  .toc ul {
+  .toc ul,
+  .toc ol {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
@@ -431,7 +432,7 @@
 <script type='text/javascript' src='/js/lightbox.js'></script>
 
 
-<script src='https://lixiang.dev/js/vanilla-back-to-top.min.js'></script>
+<script src='/js/vanilla-back-to-top.min.js'></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     addBackToTop({
@@ -650,7 +651,7 @@ document.addEventListener('DOMContentLoaded', function () {
     How to use
   </a> if you read the README.</p>
 <p>Just add the below codes to your footer template <code>../layouts/partials/footer.html</code>. You may notice the script is trying to append to a container that doesn&rsquo;t exist in your HTML when the script runs, but it truly works since the DOM is usually fully loaded by the time the script runs, which allows the script to be appended without needing to explicitly define a container.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;<span style="color:#a6e22e">addBackToTop</span>({
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">diameter</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">56</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">backgroundColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;rgb(255, 82, 82)&#39;</span>,
@@ -663,30 +664,30 @@ document.addEventListener('DOMContentLoaded', function () {
     page
   </a>, copy and paste the code as <code>vanilla-back-to-top.min.js</code> and put it in your custom js folder, for example <code>../static/js/vanilla-back-to-top.min.js</code>.</p>
 <p>Then add the below codes in your footer template.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/js/vanilla-back-to-top.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/js/vanilla-back-to-top.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;<span style="color:#a6e22e">addBackToTop</span>()&lt;/<span style="color:#f92672">script</span>&gt;
 </span></span></code></pre></div><h2 id="with-npm">With npm</h2>
 <p>You can also install the package via npm and import it into your own bundle. Run the below codes in your hugo project&rsquo;s root folder.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">npm</span> <span style="color:#a6e22e">install</span> <span style="color:#f92672">--</span><span style="color:#a6e22e">save</span> <span style="color:#a6e22e">vanilla</span><span style="color:#f92672">-</span><span style="color:#a6e22e">back</span><span style="color:#f92672">-</span><span style="color:#a6e22e">to</span><span style="color:#f92672">-</span><span style="color:#a6e22e">top</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">npm</span> <span style="color:#a6e22e">install</span> <span style="color:#f92672">--</span><span style="color:#a6e22e">save</span> <span style="color:#a6e22e">vanilla</span><span style="color:#f92672">-</span><span style="color:#a6e22e">back</span><span style="color:#f92672">-</span><span style="color:#a6e22e">to</span><span style="color:#f92672">-</span><span style="color:#a6e22e">top</span>
 </span></span></code></pre></div><p>Then import it as ES6, Node.js or RequireJS module, for example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">addBackToTop</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vanilla-back-to-top&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">addBackToTop</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vanilla-back-to-top&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">addBackToTop</span>()
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// your code here
 </span></span></span></code></pre></div><h2 id="custom">Custom</h2>
 <p>The default params are shown below, you can always custom it yourself.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">addBackToTop</span>({
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">addBackToTop</span>({
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">backgroundColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;#000&#39;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">cornerOffset</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>, <span style="color:#75715e">// px
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">diameter</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">56</span>, <span style="color:#75715e">// px
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">ease</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">inOutSine</span>, <span style="color:#75715e">// any one from https://www.npmjs.com/package/ease-component will do
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;back-to-top&#39;</span>,
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">diameter</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">56</span>, <span style="color:#75715e">// px
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ease</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">inOutSine</span>, <span style="color:#75715e">// any one from https://www.npmjs.com/package/ease-component will do
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;back-to-top&#39;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">innerHTML</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&lt;svg viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&#39;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">onClickScrollTo</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>, <span style="color:#75715e">// px
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">scrollContainer</span><span style="color:#f92672">:</span> document.<span style="color:#a6e22e">body</span>, <span style="color:#75715e">// or a DOM element, e.g., document.getElementById(&#39;content&#39;)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">scrollDuration</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>, <span style="color:#75715e">// ms
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">showWhenScrollTopIs</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#75715e">// px
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">size</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">diameter</span>, <span style="color:#75715e">// alias for diameter
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">textColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;#fff&#39;</span>,
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scrollContainer</span><span style="color:#f92672">:</span> document.<span style="color:#a6e22e">body</span>, <span style="color:#75715e">// or a DOM element, e.g., document.getElementById(&#39;content&#39;)
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scrollDuration</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>, <span style="color:#75715e">// ms
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">showWhenScrollTopIs</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#75715e">// px
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">size</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">diameter</span>, <span style="color:#75715e">// alias for diameter
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">textColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;#fff&#39;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">zIndex</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span>})
 </span></span></code></pre></div><table>
@@ -744,7 +745,7 @@ document.addEventListener('DOMContentLoaded', function () {
   </tbody>
 </table>
 <p>And here is my config, you can see what it looks like at the right-down corner. If you wanna use mine, just copy and paste the codes to your head.html.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- vanilla-back-to-top --&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- vanilla-back-to-top --&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/js/vanilla-back-to-top.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
 </span></span><span style="display:flex;"><span>  document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;DOMContentLoaded&#34;</span>, <span style="color:#66d9ef">function</span> () {
@@ -806,15 +807,14 @@ document.addEventListener('DOMContentLoaded', function () {
       </main>  
     <script src="/js/clipboard.js"></script>
     <link rel="stylesheet" href="/css/clipboard.css">
-</div>
-  </body>
-
-  <footer><i>Dear wind, please take me fly</i>
+<footer><i>Dear wind, please take me fly</i>
 <br />
-Copyright &copy; 2025 Li Xiang 
+Copyright &copy; 2026 Li Xiang 
  · 
 Based on <a href="https://bearblog.dev/" target="_blank">Bear ʕ•ᴥ•ʔ Blog</a>
 
 
 </footer>
+    </div>
+  </body>
 </html>
