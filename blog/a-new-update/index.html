@@ -436,13 +436,13 @@ Btw, I moved back to github page again on Oct. 5th, 2025. lol">
 <script type='text/javascript' src='/js/lightbox.js'></script>
 
 
-<script src='https://lixiang.dev/js/vanilla-back-to-top.min.js'></script>
+<script src='/js/vanilla-back-to-top.min.js'></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     addBackToTop({
         id: 'backToTopButton',
         backgroundColor: 'transparent',
-        textColor: '#333',
+        textColor: window.matchMedia('(prefers-color-scheme: dark)').matches ? '#ddd' : '#333',
         size: 100,
         scrollDuration: 777,
         innerElement: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 14l5-5 5 5H7z" fill="currentColor"/></svg>',
@@ -511,7 +511,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css' integrity='sha384-7lU0muIg/i1plk7MgygDUp3/bNRA65orrBub4/OSWHECgwEsY83HaS1x3bljA/XV' crossorigin='anonymous'>
 <script defer src='https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.js' integrity='sha384-RdymN7NRJ+XoyeRY4185zXaxq9QWOOx3O7beyyrRK4KQZrPlCDQQpCu95FoCGPAE' crossorigin='anonymous'></script>
-<script defer src='https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/contrib/auto-render.min.js' integrity='sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh' crossorigin='anonymous' onload='renderMathInElement(document.body);'></script>
+<script defer src='https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/contrib/auto-render.min.js' integrity='sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh' crossorigin='anonymous'></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     renderMathInElement(document.body, {
@@ -611,7 +611,6 @@ document.addEventListener('DOMContentLoaded', function () {
 </p>
 
       </main>  </div>
-  </body>
 
   <footer><i>Dear wind, please take me fly</i>
 <br />
@@ -621,4 +620,5 @@ Based on <a href="https://bearblog.dev/" target="_blank">Bear ʕ•ᴥ•ʔ Blog
 
 
 </footer>
+  </body>
 </html>

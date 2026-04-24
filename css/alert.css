@@ -24,9 +24,9 @@
   color: #272625
 }
 .alert-primary {
-  background-color: #c1c0bd;
-  border-color: #f9a600;
-  color: #f9a600
+  background-color: #efbf30;
+  border-color: #41403e;
+  color: #41403e
 }
 .alert-primary .btn-close {
   color: #5b5a57
@@ -111,34 +111,4 @@
   opacity: 0;
   padding-bottom: 0;
   padding-top: 0
-}
-.alert-primary {
-  background-color: #efbf30;
-  border-color: #41403e;
-  color: #41403e
-}
-.alert-secondary {
-  background-color: #deefff;
-  border-color: #0071de;
-  color: #0071de
-}
-.alert-success {
-  background-color: #d0dbc2;
-  border-color: #86a361;
-  color: #86a361
-}
-.alert-warning {
-  background-color: #f5f0c6;
-  border-color: #ddcd45;
-  color: #ddcd45
-}
-.alert-danger {
-  background-color: #f0cbc9;
-  border-color: #a7342d;
-  color: #a7342d
-}
-.alert-muted {
-  background-color: #e6e7e9;
-  border-color: #868e96;
-  color: #868e96
 }
